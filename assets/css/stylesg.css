@@ -1,0 +1,45 @@
+/* Activa el desplazamiento suave en toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Menú de navegación fijo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para todas las secciones */
+section {
+    min-height: 100vh; /* Cada sección ocupa al menos el alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Colores de fondo para diferenciar las secciones */
+#inicio { background-color: #f4f4f4; }
+#nosotros { background-color: #e2e2e2; }
+#servicios { background-color: #f4f4f4; }
+#contacto { background-color: #e2e2e2; }
