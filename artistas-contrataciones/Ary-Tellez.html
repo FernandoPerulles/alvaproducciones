@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El título ahora es dinámico para cada artista -->
+    <title>Contratación de [Nombre del Artista] - Tu Marca</title>
+    <!-- Usamos el MISMO archivo CSS que la página principal -->
+    <link rel="stylesheet" href="../assets/css/artistas.css">
+</head>
+<body>
+
+    <!-- 1. HEADER REUTILIZADO -->
+    <!-- Es importante que los enlaces ahora apunten a la página principal -->
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenido específico de la página del artista -->
+    <div class="artist-page">
+
+        <!-- 2. SECCIÓN DE HÉROE CON IMAGEN DE FONDO -->
+        <section class="artist-hero" style="background-image: url('https://via.placeholder.com/1500x600.png?text=Imagen+del+Artista' );">
+            <!-- Podemos dejar esta sección vacía o poner un título superpuesto -->
+        </section>
+
+        <main class="artist-content-wrapper">
+            <!-- 3. TÍTULO DEL ARTISTA -->
+            <h1 class="artist-name">Ana Bárbara</h1>
+
+            <!-- 4. CONTENIDO PRINCIPAL EN DOS COLUMNAS -->
+            <div class="artist-layout">
+
+                <!-- Columna Izquierda: Biografía y Medios -->
+                <div class="main-column">
+                    <h2>Biografía</h2>
+                    <p>Altagracia Ugalde Mota, conocida artísticamente como Ana Bárbara, es una cantante, compositora, actriz, coreógrafa y productora mexicana. Es una de las figuras femeninas más importantes de la música regional mexicana.</p>
+                    <p>Aquí iría más texto sobre su carrera, logros, discografía, etc.</p>
+
+                    <!-- 5. GALERÍA DE VIDEOS -->
+                    <h3 class="media-title">Videos Destacados</h3>
+                    <div class="video-gallery">
+                        <!-- Video de YouTube Incrustado (responsive) -->
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Sidebar con datos clave -->
+                <aside class="sidebar-column">
+                    <div class="info-box">
+                        <h3>Información Clave</h3>
+                        <ul>
+                            <li><strong>Género:</strong> Regional Mexicano, Grupero</li>
+                            <li><strong>Actividad:</strong> 1994 - Presente</li>
+                            <li><strong>Éxitos:</strong> "Bandido", "Lo busqué", "Qué poca"</li>
+                        </ul>
+                        <!-- 6. LLAMADA A LA ACCIÓN (BOTÓN ) -->
+                        <a href="index.html#contacto" class="cta-button">Cotizar Evento</a>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER REUTILIZADO -->
+    <footer>
+        <p>&copy; 2025 Tu Marca</p>
+    </footer>
+
+</body>
+</html>
